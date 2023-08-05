@@ -1,0 +1,133 @@
+---
+name: Thong Hoang
+surname: Trinh
+position: "Hardware Design Engineer"
+address: "District 12, Ho Chi minh"
+phone: +84 372 725 338
+email: "trinhhoangthong1503@gmail.com"
+output: 
+  vitae::moderncv:
+    theme: classic
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tibble)
+library(dplyr)
+library(stringr)
+library(tidyr)
+install.packages("tidyverse")
+```
+
+# Objectives
+
+* Seeking opportunity to utilize academic knowledge in physics and hardware design at Renesas Design Vietnam.
+* Eager to apply skills in PCB layout, circuit simulation, and prototyping to contribute to projects.
+* Motivated to learn from experienced engineers and become proficient in industry tools and processes.
+* Aiming to develop communication and teamwork abilities in a professional environment and gain valuable experience in embedded systems at a leading company like Renesas.
+
+# Education
+
+```{r }
+tribble(
+  ~ Degree, ~ Year, ~ University, ~ Location, ~ Grade,
+  "Bachelor, PHYSICS AND ENGINEERING PHYSICS", "2023", "VNUHCM - UNIVERSITY OF SCIENCE", "Ho Chi Minh City", "GPA: 7.5/10, Thesis: 9.5/10, Rank: 2nd in class",
+) %>%
+  detailed_entries(Degree, Year, University, Location, Grade)
+
+```
+
+```{r}
+tribble(
+  ~ Degree, ~ Year, ~ University,
+ "Intermediate professional, NETWORK AND SYSTEM ADMINISTRATION/ADMINISTRATOR", "2017", "Information and Mass Communication Institute of Ho Chi Minh City (IMC)"
+ ) %>% 
+  detailed_entries(Degree, Year, University)
+```
+
+# Technical Skills
+
+```{r}
+tribble(
+  ~ Skill,
+  "Programming language: R, C++, SQL",
+  "Software: Proteus Design Suite, VMware, Matlab, Excel, R Studio, Originlab, Tableau",
+  "Operating system: Windows server, Linux CentOS, Ubuntu"
+) %>%
+  brief_entries(Skill)
+
+```
+
+# PROJECTS
+
+```{r}
+projects <- tribble(
+  ~ Project, ~ Year, ~ Description,
+  "Effect of the growth sector boundary on the structure and characteristics of KDP crystals grown from crystal violet and EDTA added mother solution", "2023","",
+  
+  "","","Demonstrate the optimal CV(Crystal Violet) concentration for enhancing the second harmonic generation (SHG) performance in KDP crystals",
+  "", "", "The development process of the KCVE (0.001 mol%) single crystal rod is simulated using Matlab",
+  "", "", "The KCVE samples are analyzed by EDX spectra, XRD analysis, and measurements such as UV-Vis spectra, PL spectra, and second harmonic generation (SHG) effects",
+  "ZnO thin film coating", "2022","",
+  
+  "","","Using sputtering, sol-gel dip coating method to coat material.",
+  
+  "", "", "Applied XRD, EDX and UV-Vis to analyze the properties of each method",
+  
+  "Student attendance program", "2022","",
+  "","","Matlab project that apply knowledge learned throughout the Matlab programming subject in my University",
+  "", "", "Import files from excel to find the right data in both ID number and name then import back the new data to excel sheets",
+)
+
+projects %>%
+  
+  detailed_entries(Project, Year, Description)
+
+```
+
+
+# Certifications
+
+```{r}
+tribble(
+  ~ Certification, ~ Year, ~ Authority,
+  "TOEIC 600", "2017", "ETS",
+  "Learning How to Learn: Powerful mental tools to help you master tough subjects" , "2020", "Coursera",
+  "Ask Questions to make Data-Driven Decisions", "2022", "Coursera",
+  "Data Analysis with R Programming" , "2023", "Coursera",
+  "Google Data Analytics Certificates", "2023", "Coursera",
+) %>%
+  brief_entries(Certification, Year, Authority)
+
+```
+
+# Experience
+
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Company, ~ Description1,
+  "Teacher", "12/2022", "Edupia Tutor ", "Utilized technology to enhance instruction, increase student engagement, and provide real-world learning experiences"
+
+) %>%
+  detailed_entries(Position, Year, Company, Description1)
+
+```
+
+
+
+```{r}
+projects <- tribble(
+  ~ Project, ~ Year, ~ Description, ~ Link,
+  "Effect of the growth sector boundary on the structure and characteristics of KDP crystals grown from crystal violet and EDTA added mother solution", "2023", "Demonstrate the optimal CV(Crystal Violet) concentration for enhancing the second harmonic generation (SHG) performance in KDP crystals.\nThe development process of the KCVE (0.001 mol%) single crystal rod is simulated using Matlab.\nThe KCVE samples are analyze by EDX spectra, XRD analysis, and measurements such as UV-Vis spectra, PL spectra, and second harmonic generation (SHG) effects.", "https://github.com/TomALtR/my_thesis_matlab",
+  "ZnO thin film coating", "2023", "Using sputtering, sol-gel dip coating method to coat material.\nApplied XRD, EDX and UV-Vis to analyze the properties of each method.", NA,
+  "Student attendance program", "2023", "Matlab project that apply what I have learn through out the matlab programing subject in my University.\nImport files from excel to find the right data in both ID number and name then import back the new data to excel sheets.", "https://github.com/TomALtR/my_thesis_matlab"
+)
+
+projects %>%
+  arrange(desc(Year)) %>%
+  detailed_entries(Project, Year, Description, Link)
+
+```
+
+
