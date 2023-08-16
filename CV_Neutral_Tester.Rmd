@@ -1,0 +1,130 @@
+---
+name: Thong Hoang
+surname: Trinh
+position: "Software Test Engineer"
+address: "District 12, Ho Chi minh"
+phone: +84 372 725 338
+email: "trinhhoangthong1503@gmail.com"
+output: 
+  vitae::moderncv:
+    theme: classic
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+library(vitae)
+library(tibble)
+library(dplyr)
+library(stringr)
+library(tidyr)
+```
+
+# Objectives
+
+* Seeking opportunity to learn methods for effectively planning and contribute to testing high-quality applications.
+* Eager to apply my analytical and problem-solving abilities to contribute to optimized code meeting business requirements.
+* Motivated to learn from experienced engineers and become proficient in industry tools and processes.
+* Aiming to develop communication and teamwork abilities in a professional environment and gain valuable experience at workplace.
+
+
+# Some stuff about me
+
+ * Continuous Self-Improvement: I believe in continuous self-improvement and strive to be better today than I was yesterday. This drive fuels my personal and professional growth.
+ 
+* Entrepreneurial Spirit: In 2017, I took a gap year and channeled my entrepreneurial spirit to open my own takeaway cafe. This venture honed my skills in business management, customer service, and problem-solving.
+
+ * Resilience and Adaptability: My gap year experience taught me to be resilient in the face of challenges and adaptable to changing circumstances.
+
+# Education
+
+```{r }
+tribble(
+  ~ Degree, ~ Year, ~ University, ~ Location, ~ Grade,
+  "Bachelor, PHYSICS AND ENGINEERING PHYSICS", "2023", "VNUHCM - UNIVERSITY OF SCIENCE", "Ho Chi Minh City", "GPA: 7.21/10, Thesis: 9.5/10, Rank: 2nd in class",
+   "Intermediate professional, NETWORK AND SYSTEM ADMINISTRATION/ADMINISTRATOR", "2017", "Information and Mass Communication Institute of Ho Chi Minh City (IMC)","Ho Chi Minh City",NA
+) %>%
+  detailed_entries(Degree, Year, University, Location, Grade)
+
+```
+
+# Relevant Coursework
+
+```{r }
+tribble(
+  ~ Degree, ~ Year, ~ University, ~ Location, ~ Grade,
+  "ENGINEERING PHYSICS", "", "", "", " Quantum Mechanics, Electromagnetism, Thermodynamics, Solid State Physics, Optics, Nuclear Physics, Mathematical Physics, Introduction to Electronics, Semiconductor Devices, Semiconductor Optoelectronics",
+   "SYSTEM ADMINISTRATION","","","","Operating Systems, Network Design and Administration, Computer Security, Database Management, Data Structures and Algorithms"
+) %>%
+  detailed_entries(Degree, Year, University, Location, Grade)
+
+```
+
+# Technical Skills
+
+```{r}
+tribble(
+  ~ Skill,
+  "Programming language: R, C++, SQL, Python",
+  "Software: Proteus Design Suite, VMware, Matlab, Excel, R Studio, Originlab, Tableau, Visual Studio Code",
+  "Operating system: Windows server, Linux CentOS, Ubuntu"
+) %>%
+  brief_entries(Skill)
+
+```
+
+# Projects
+
+* Effect of the growth sector boundary on the structure and characteristics of KDP crystals grown from crystal violet and EDTA added mother solution", "2023
+
+  + Demonstrate the optimal CV(Crystal Violet) concentration for enhancing the second harmonic generation (SHG) performance in KDP crystals
+  
+  + The development process of the KCVE (0.001 mol%) single crystal rod is simulated using Matlab. 
+  
+  + The KCVE samples are analyze by EDX spectra, XRD analysis, and measurements such as UV-Vis spectra, PL spectra, and second harmonic generation (SHG) effects. 
+ 
+ (https://github.com/TomALtR/my_thesis_matlab)
+ 
+* ZNO THIN FILM COATING
+  + Using sputtering, sol-gel dip coating method to coat material.
+  + Applied XRD, EDX and UV-Vis to analyze the properties of each method.
+  
+  
+* STUDENT ATTENDANCE PROGRAM
+  
+  + Matlab project that apply Knowlegde learn through out the matlab programing subject.
+  + Import files from excel to find the right data in both ID number and name then import back the new data to excel sheets.
+  
+ (https://github.com/TomALtR/my_matlab_first_project)
+ 
+# Certifications
+
+```{r}
+tribble(
+  ~ Certification, ~ Year, ~ Authority,
+  "TOEIC 600", "2017", "ETS",
+  "Learning How to Learn: Powerful mental tools to help you master tough subjects" , "2020", "Coursera",
+  "Ask Questions to make Data-Driven Decisions", "2022", "Coursera",
+  "Analyze Data to Answer Questions","2022","Coursera",
+  "Data Analysis with R Programming" , "2023", "Coursera",
+  "Google Data Analytics Certificates", "2023", "Coursera",
+  "Technical Support Fundamentals","2023","Coursera",
+  "Crash Course on Python","2023","Coursera",
+) %>%
+  brief_entries(Certification, Year, Authority)
+
+```
+
+# Experience
+
+```{r }
+tribble(
+  ~ Degree, ~ Year, ~ University, ~ Location, ~ Grade,
+  "English Teacher", "12-2022", "Edupia Tutor", "", "Utilized technology to enhance instruction, increase student engagement, and provide real-world learning experiences",
+) %>%
+  detailed_entries(Degree, Year, University, Location, Grade)
+
+```
+
+## This CV was generated using R
+(https://github.com/TomALtR/my_CV/tree/main/Rstudio_CV)
